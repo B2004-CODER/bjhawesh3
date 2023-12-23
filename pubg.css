@@ -1,0 +1,154 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #3498db;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+width:100px;
+height: 100px;
+border-radius:50%;
+}
+/*drop-down menu*/
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+nav ul li a{
+    display: block;
+    padding: 20px 25px;
+    text-decoration: none;
+
+}
+nav ul li ul.dropdown li{
+    display: block;
+}
+nav ul li ul.dropdown{
+    width: 100px;
+    background:peru;
+    position: absolute;
+    z-index: 999;
+    border-radius: 10px;
+    display: none;
+    margin-left: 50px;
+}
+nav ul li a:hover{
+    background-color: crimson;
+    border-radius: 10px;
+}
+nav ul li a:active{
+    color:navy;
+}
+nav ul li:hover ul.dropdown{
+    display: block;
+}
+ /*text change animation*/       
+#changingText{
+    font-size: 2em;
+    animation:textChange 2s infinite ;
+}
+
+@keyframes textChange{
+    0%, 25%{
+        opacity: 1;
+    }
+    30%, 50%{
+        opacity: 1;
+    }
+    55%, 100%{
+        opacity: 1;
+    }
+}
+
+nav a{
+    text-decoration: none;
+    color:#fff;
+    font-weight: bold;
+}
+
+main{
+    padding: 20px;
+}
+
+.intro{
+    text-align: center;
+}
+.courses{
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    margin: -150px;
+}
+.cover{
+    width: 1110px;
+    height: 660px;
+    margin-top: 50px;
+    display: flex;
+    margin: 0 auto;
+    overflow: hidden;
+    flex-direction: row-reverse;
+    padding: auto;
+}
+.box{
+    width: 1100px;
+    max-width: fit-content;
+    height: 460px;
+    margin: 10px ;
+
+    box-shadow: -1px 0 10px #000000;
+    align-items: center;
+    justify-content: center;
+    padding: auto;
+    border-radius: 0.5rem;
+}
+.box img{
+    width: 350px;
+}
+.footercontainers{
+    width: 100%;
+    padding: 70px 30px 20px;
+
+}
+.icon{
+    display: flex;
+    justify-content: center;
+
+}
+.icon a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+
+}
+.icon a i{
+    font-size: 2em;
+    color: #000000;
+    opacity: 0.9s;
+}
+/*hovereffect icon*/
+.icon a:hover{
+    background-color: #111;
+    transition: 0.5s;
+}
+.icon a:hover i{
+    color: #ffffff;
+    transition: 0.5s;
+}
